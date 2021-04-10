@@ -1,13 +1,19 @@
-<template></template>
+<template>
+  <div class="flex center block search">
+    <Search />
+  </div>
+</template>
 
 <script lang="ts">
 import { defineComponent, computed } from "vue";
 import { useStore } from "@/store";
 import * as homeTypes from "@/store/home/types";
 import * as abountTypes from "@/store/about/types";
+import Search from "@/components/Search.vue";
 
 export default defineComponent({
   name: "Home",
+  components: { Search },
   setup() {
     const store = useStore();
     const { home, about } = store.state;
@@ -25,3 +31,8 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped>
+.search {
+  margin-top: 30px;
+}
+</style>

@@ -1,0 +1,26 @@
+body {
+  background:#fff;
+}
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.middle {
+  align-items: center;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.block {
+  width: 100%;
+}
